@@ -1,3 +1,4 @@
+package Day3;
 
 import java.util.*;
 public class A_Theatre_Square {
