@@ -1,0 +1,25 @@
+class Sym {
+    public int countSymmetricIntegers(int low, int high) {
+   int count=0;
+   for(int i=low;i<=high;i++)    {
+    String s=Integer.toString(i);
+    int n =s.length();
+    if (n%2!=0){
+        continue;
+    }
+    int half=n/2;
+    int l=0;
+    int r=0;
+    for(int j=0;j<half;j++){
+        l+=s.charAt(j)-'0';
+    }
+    for(int j=half;j<n;j++){
+        r+=s.charAt(j)-'0';
+    }
+    if (l==r)
+    count++;
+   }
+return count;
+   
+}
+}// time complxity=0(n)
